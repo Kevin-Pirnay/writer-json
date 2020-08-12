@@ -6,7 +6,8 @@ module.exports = class Writer
         this.fs = require('fs')
     }
 
-    //Warning!!! remember data must have a dynamic key and with a shape -> data[key] = add
+
+    //use this function to write data in a Json file
     writing = (data)=>
     {
         this.fs.readFile(this.file,(err,dataOriginFile)=>
